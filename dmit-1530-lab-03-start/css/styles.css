@@ -9,8 +9,10 @@
 }
 
 /* Utility Classes */
-
-
+.icon {
+    position: relative;
+    margin-top: 0.3rem;
+}
 
 /* Universal Styles */
 
@@ -34,5 +36,69 @@ header {
     padding: 0.5rem;
 }
 
-/* Media Query */
+nav {
+    margin-top: 2rem;
+}
 
+ul {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+svg {
+    width: 1.5rem;
+}
+
+li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+li:last-of-type {
+    margin: 0.1rem;
+}
+
+span {
+    background-color: var(--rose-700);
+    border-radius: 100%;
+    padding: 0 0.4em;
+    font-size: 0.85rem;
+    color: var(--slate-50);
+    text-align: center;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul a:hover {
+    color: var(--accent);
+}
+
+/* Media Query */
+@media screen and (min-width: 960px) {
+    header>div {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1080px;
+    }
+
+    ul {
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+
+    nav {
+        margin: 0;
+    }
+}
